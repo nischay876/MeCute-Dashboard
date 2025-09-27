@@ -25,7 +25,7 @@ jobs:
 
       # 4️⃣ Build the Docker image
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag vocard-dashboard:latest
+        run: docker build . --file Dockerfile --tag mecute-dashboard:latest
 
       # 5️⃣ Log in to GitHub Container Registry
       - name: Log in to GitHub Docker Registry
@@ -36,5 +36,5 @@ jobs:
       # 6️⃣ Push the Docker image
       - name: Push the Docker image
         run: |
-          docker tag vocard-dashboard:latest ghcr.io/chocomeow/vocard-dashboard:latest
-          docker push ghcr.io/chocomeow/vocard-dashboard:latest
+          docker tag vocard-dashboard:latest ghcr.io/nischay876/mecute-dashboard:rebrand
+          docker push ghcr.io/nischay876/mecute-dashboard:rebrand
